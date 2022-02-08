@@ -198,7 +198,8 @@ public class Ahorcadoo extends Application {
 		alert.setTitle("ERROR");
 		alert.setHeaderText("Error al guardar el fichero:" + fileName);
 		alert.setContentText("Compruebe que el fichero no esté abierto por otro programa");
-		alert.showAndWait();
+		alert.showAndWait(); 
+		//AridaiOrtega
 	}
 }
     

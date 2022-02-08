@@ -51,4 +51,5 @@ public class Jugador {
 	public final void setPuntuacion(final int puntuacion) {
 		this.puntuacionProperty().set(puntuacion);
 	}
+	//Ahorcado
 }
