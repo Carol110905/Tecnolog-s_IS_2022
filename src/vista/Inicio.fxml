@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.InicioController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0">
+         <image>
+            <Image url="@images/s.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="134.0" layoutY="21.0" text="SELECCIONA UN JUEGO">
+         <font>
+            <Font name="Rockwell" size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAhorcado" layoutX="37.0" layoutY="250.0" mnemonicParsing="false" onAction="#ahorcado" style="-fx-background-color: #BE7113;" text="AHORCADO">
+         <font>
+            <Font name="Rockwell" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSerpiente" layoutX="242.0" layoutY="250.0" mnemonicParsing="false" onAction="#serpiente" style="-fx-background-color: #BE7113;" text="SERPIENTE">
+         <font>
+            <Font name="Rockwell" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnGato" layoutX="460.0" layoutY="250.0" mnemonicParsing="false" onAction="#gato" style="-fx-background-color: #BE7113;" text="GATO">
+         <font>
+            <Font name="Rockwell" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

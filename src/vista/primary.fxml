@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #A2D9CE;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.PrimaryController">
+   <top>
+      <Pane prefHeight="45.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="labelJugador1" layoutX="23.0" layoutY="9.0" text="Gatitos:">
+               <font>
+                  <Font name="Bell MT" size="23.0" />
+               </font></Label>
+            <Label fx:id="labelJugador2" layoutX="458.0" layoutY="9.0" text="Perritos:">
+               <font>
+                  <Font name="Bell MT" size="23.0" />
+               </font></Label>
+            <Label id="puntosJugador1" fx:id="labelJugador12" layoutX="109.0" layoutY="8.0" text="0" textAlignment="CENTER">
+               <font>
+                  <Font name="Bell MT" size="25.0" />
+               </font></Label>
+            <Label id="puntosJugador2" fx:id="labelJugador22" layoutX="550.0" layoutY="8.0" text="0" textAlignment="RIGHT">
+               <font>
+                  <Font name="Bell MT" size="25.0" />
+               </font></Label>
+         </children>
+      </Pane>
+   </top>
+   <bottom>
+      <Pane prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button id="btnReiniciar" fx:id="btnReiniciar" layoutX="14.0" layoutY="7.0" mnemonicParsing="false" onMouseClicked="#Reiniciar" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #71EC46; -fx-border-color: white; -fx-font-size: 18; -fx-font-family: Consolas;" text="Reiniciar" />
+            <Button id="btnSalir" fx:id="btnSalir" layoutX="436.0" layoutY="7.0" mnemonicParsing="false" onMouseClicked="#Salir" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #EC4646; -fx-border-color: white; -fx-font-family: Consolas; -fx-font-size: 18;" text="Salir" />
+            <Label id="labelGanador" fx:id="labelTurno" alignment="CENTER" layoutX="171.0" layoutY="12.0" prefHeight="31.0" prefWidth="256.0" text="Turno de:" textAlignment="CENTER">
+               <font>
+                  <Font name="Consolas" size="23.0" />
+               </font></Label>
+            <Button fx:id="btnJugar" layoutX="14.0" layoutY="6.0" mnemonicParsing="false" onMouseClicked="#VolverAJugar" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #71EC46; -fx-border-color: white; -fx-font-family: Consolas; -fx-font-family: Consolas; -fx-font-size: 16;" text="Voler a Jugar">
+               <font>
+                  <Font name="Constantia" size="1.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </bottom>
+   <center>
+      <Pane prefHeight="298.0" prefWidth="343.0" BorderPane.alignment="CENTER">
+         <children>
+            <Line endX="79.0" layoutX="223.0" layoutY="106.0" startX="-176.0" startY="1.0" />
+            <Line endX="79.0" layoutX="223.0" layoutY="191.0" startX="-176.0" startY="1.0" />
+            <Line endX="-38.0" endY="-121.0" layoutX="169.0" layoutY="144.0" startX="-38.0" startY="131.0" />
+            <Line endX="-30.0" endY="121.0" layoutX="248.0" layoutY="155.0" startX="-30.0" startY="-134.0" />
+            <ImageView fx:id="Panel8" fitHeight="80.0" fitWidth="80.0" layoutX="135.0" layoutY="197.0" onMouseClicked="#click8" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Panel7" fitHeight="80.0" fitWidth="80.0" layoutX="46.0" layoutY="197.0" onMouseClicked="#click7" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Panel6" fitHeight="80.0" fitWidth="80.0" layoutX="223.0" layoutY="109.0" onMouseClicked="#click6" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Panel5" fitHeight="80.0" fitWidth="80.0" layoutX="135.0" layoutY="109.0" onMouseClicked="#click5" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Panel4" fitHeight="80.0" fitWidth="80.0" layoutX="46.0" layoutY="109.0" onMouseClicked="#click4" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Panel3" fitHeight="80.0" fitWidth="80.0" layoutX="223.0" layoutY="23.0" onMouseClicked="#click3" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Panel2" fitHeight="80.0" fitWidth="80.0" layoutX="135.0" layoutY="23.0" onMouseClicked="#click2" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Panel1" fitHeight="80.0" fitWidth="80.0" layoutX="46.0" layoutY="23.0" onMouseClicked="#click1" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Panel9" fitHeight="80.0" fitWidth="80.0" layoutX="223.0" layoutY="197.0" onMouseClicked="#click9" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+   </center>
+   <right>
+      <ImageView fitHeight="187.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@Perrito.jpg" />
+         </image>
+      </ImageView>
+   </right>
+   <left>
+      <ImageView fitHeight="300.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@Gatito.jpg" />
+         </image>
+      </ImageView>
+   </left>
+</BorderPane>
