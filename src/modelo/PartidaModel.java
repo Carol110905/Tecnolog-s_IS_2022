@@ -127,6 +127,7 @@ public class PartidaModel {
 		this.vidasProperty().set(vidas);
 	}
 	
+	//ahorcado
 	
 	
 	
