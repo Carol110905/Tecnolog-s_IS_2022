@@ -64,6 +64,7 @@ public class JugadoresController implements Initializable {
 	public BorderPane getRootView() {
 		return view;
 	}
+	//Aridai
 	
 
 }
